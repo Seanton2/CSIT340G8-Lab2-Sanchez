@@ -1,12 +1,15 @@
 import NavLink from './NavLink'
 
-const links = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
-
 export default function Navbar() {
   return (
     <nav>
-      <a href="/">Sean Anthony P. Sanchez</a>
-      {links.map((l) => <NavLink key={l} href={`#${l.toLowerCase()}`} label={l} />)}
+      <a href="#top">Sean Anthony P. Sanchez</a>
+
+      <NavLink href="#about" label="About" />
+      <NavLink href="#skills" label="Skills" />
+      <NavLink href="#projects" label="Projects" />
+      <NavLink href="#experience" label="Experience" />
+      <NavLink href="#contact" label="Contact" />
     </nav>
   )
 }
