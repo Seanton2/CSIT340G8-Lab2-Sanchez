@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@layer base {
+  body { margin: 8px; }
+  a { color: #0000ee; text-decoration: underline; }
+  h1 { font-size: 2em; font-weight: bold; }
+  h2 { font-size: 1.5em; font-weight: bold; }
+  h3 { font-size: 1.17em; font-weight: bold; }
+  h1, h2, h3, p, dl, ul, ol { margin: 1em 0; }
+  ul { list-style: disc; padding-left: 2.5rem; }
+  ol { list-style: decimal; padding-left: 2.5rem; }
+  dd { margin-left: 2.5rem; }
+  nav a, header a, span { margin-right: 0.35em; }
+  nav { margin: 0; }
+}

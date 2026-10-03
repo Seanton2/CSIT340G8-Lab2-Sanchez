@@ -1,3 +1,3 @@
 export default function SkillTag({ name }) {
-  return <span className="">{name}</span>
+  return <span>{name}</span>
 }

@@ -1,3 +1,3 @@
 export default function NavLink({ href, label }) {
-  return <a href={href} className="">{label}</a>
+  return <a href={href}>{label}</a>
 }

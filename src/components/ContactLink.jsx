@@ -1,7 +1,3 @@
 export default function ContactLink({ label, href, text }) {
-  return (
-    <li className="">
-      {label} <a href={href} className="">{text}</a>
-    </li>
-  )
+  return <li>{label} <a href={href}>{text}</a></li>
 }
