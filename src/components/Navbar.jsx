@@ -2,14 +2,19 @@ import NavLink from './NavLink'
 
 export default function Navbar() {
   return (
-    <nav>
-      <a href="#top">Sean Anthony P. Sanchez</a>
-
-      <NavLink href="#about" label="About" />
-      <NavLink href="#skills" label="Skills" />
-      <NavLink href="#projects" label="Projects" />
-      <NavLink href="#experience" label="Experience" />
-      <NavLink href="#contact" label="Contact" />
+    <nav className="sticky top-0 z-10 border-b border-stone-200 bg-white">
+      <div className="mx-auto flex h-16 max-w-4xl items-center justify-between px-6">
+        <a href="#top" className="font-semibold">
+          Sean Anthony P. Sanchez
+        </a>
+        <div className="flex gap-6 text-sm text-stone-600">
+          <NavLink href="#about" label="About" />
+          <NavLink href="#skills" label="Skills" />
+          <NavLink href="#projects" label="Projects" />
+          <NavLink href="#experience" label="Experience" />
+          <NavLink href="#contact" label="Contact" />
+        </div>
+      </div>
     </nav>
   )
 }

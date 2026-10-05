@@ -1,3 +1,4 @@
+import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import AboutSection from './components/AboutSection'
@@ -7,7 +8,7 @@ import ExperienceSection from './components/ExperienceSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 
-export default function App() {
+function App() {
   return (
     <>
       <Navbar />
@@ -23,3 +24,5 @@ export default function App() {
     </>
   )
 }
+
+export default App

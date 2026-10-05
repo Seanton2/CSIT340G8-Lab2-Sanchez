@@ -3,31 +3,34 @@ import SkillTag from './SkillTag'
 
 export default function SkillsSection() {
   return (
-    <section id="skills">
+    <section id="skills" className="mx-auto max-w-4xl scroll-mt-16 border-t border-stone-200 px-6 py-16">
       <SectionHeading title="Skills" subtitle="What I work with." />
-
-      <div>
+      <div className="mt-8 grid gap-8 sm:grid-cols-3">
         <div>
-          <h3>Languages</h3>
-          <SkillTag name="HTML" />
-          <SkillTag name="CSS" />
-          <SkillTag name="JavaScript" />
-          <SkillTag name="PHP" />
+          <h3 className="text-sm font-medium text-stone-500">Languages</h3>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <SkillTag name="HTML" />
+            <SkillTag name="CSS" />
+            <SkillTag name="JavaScript" />
+            <SkillTag name="PHP" />
+          </div>
         </div>
-
         <div>
-          <h3>Frameworks</h3>
-          <SkillTag name="React" />
-          <SkillTag name="Tailwind CSS" />
-          <SkillTag name="Bootstrap" />
+          <h3 className="text-sm font-medium text-stone-500">Frameworks</h3>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <SkillTag name="React" />
+            <SkillTag name="Tailwind CSS" />
+            <SkillTag name="Bootstrap" />
+          </div>
         </div>
-
         <div>
-          <h3>Tools</h3>
-          <SkillTag name="Git" />
-          <SkillTag name="VS Code" />
-          <SkillTag name="MySQL" />
-          <SkillTag name="Figma" />
+          <h3 className="text-sm font-medium text-stone-500">Tools</h3>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <SkillTag name="Git" />
+            <SkillTag name="VS Code" />
+            <SkillTag name="MySQL" />
+            <SkillTag name="Figma" />
+          </div>
         </div>
       </div>
     </section>

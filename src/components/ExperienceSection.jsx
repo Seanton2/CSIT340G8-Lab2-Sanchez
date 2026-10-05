@@ -1,18 +1,29 @@
 import SectionHeading from './SectionHeading'
 import TimelineItem from './TimelineItem'
 
-const items = [
-  { period: '2023– present', title: 'BS Information Technology', place: 'Cebu Institute of Technology University', description: 'Continuous exploring and learning through hands-on projects and coursework.' },
-  { period: '2022– 2023', title: 'Student Developer', place: 'personal workspace', description: 'Individual projects and built small web applications and practiced user-centered design while improving my coding skills.' },
-  { period: '2019– 2021', title: 'Senior High School, STEM Strand', place: 'ACLC College of Mandaue', description: 'One sentence about what you learned there.' },
-]
-
 export default function ExperienceSection() {
   return (
-    <section id="experience">
-      <SectionHeading title="Experience" subtitle="Where I have learned and worked." />
-      <ol>
-        {items.map((i) => <TimelineItem key={i.title} {...i} />)}
+    <section id="experience" className="mx-auto max-w-4xl scroll-mt-16 border-t border-stone-200 px-6 py-16">
+      <SectionHeading title="Experience" subtitle="Where I have learned." />
+      <ol className="mt-8 space-y-8 border-l border-stone-200">
+        <TimelineItem
+          period="2023 – Present"
+          title="Student"
+          place="Cebu Institute of Technology"
+          description="Continuous Studying and learning through hands-on projects and coursework."
+        />
+        <TimelineItem
+          period="2022 – 2023"
+          title="Student Developer"
+          place="Personal Workspace"
+          description="Built small web applications and practiced user centered design while improving my coding skills."
+        />
+        <TimelineItem
+          period="2021 – 2022"
+          title="Senior High School Student"
+          place="STEM Strand"
+          description="Started exploring the basics and fundamentals of development."
+        />
       </ol>
     </section>
   )
